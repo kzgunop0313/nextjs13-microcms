@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getList } from "../../libs/microcms";
 
 // キャッシュを利用しない
-export const revalidate = 60;
+export const revalidate = 0;
 
 export default async function StaticPage() {
  const { contents } = await getList();
